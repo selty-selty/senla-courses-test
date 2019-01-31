@@ -8,7 +8,7 @@ function deleteNumbers(text) {
     var arr = [];
     arr = text.split('');
     for (var i = 0; i < arr.length; i++){
-        if (parseInt(arr[i])) {
+        if (arr[i] >= '0' && arr[i] <= '9') {
             arr.splice(i, 1);
             i--;
         }
