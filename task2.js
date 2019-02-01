@@ -8,10 +8,10 @@ function fib(n) {
     return n <= 1 ? n : fib(n - 1) + fib(n - 2);
 }
 
-var arr = [0];
+var arr = [1];
 
 rl.question('Enter N: ', function (N) {
-    var i = 1;
+    var i = 2;
     while (arr[arr.length-1] <= N) {
         if (fib(i) > N)
             break;
